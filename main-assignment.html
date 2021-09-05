@@ -1,10 +1,59 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<style>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <script src="./assets/js/vendors.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 g-0 bg-gray-100">
+          <a class="d-block mt-8 ms-8 mb-5" href="./main-assignment.html">
+            <img class="d-block" src="./assets/images/logo-ANSWER.svg" alt="logo-ANSWER">
+          </a>
+          <ul class="mb-0 ps-0 menu">
+            <li class="pt-3 pb-3 ps-8">
+              <a class="text-decoration-none text-black d-flex" href="#">
+                <span class="material-icons">assessment</span><span class="ms-4 fw-bold">Dashboard</span>
+              </a>
+            </li>
+            <li class="pt-3 pb-3 ps-8">
+              <a class="text-decoration-none text-black d-flex" href="#">
+                <span class="material-icons">forum</span><span class="ms-4 fw-bold">Question</span>
+              </a>
+            </li>
+            <li class="pt-3 pb-3 ps-8">
+              <a class="text-decoration-none text-black d-flex" href="./main-assignment.html">
+                <span class="material-icons">assignment</span><span class="ms-4 fw-bold">Assignment</span>
+              </a>
+            </li>
+            <li class="pt-3 pb-3 ps-8">
+              <a class="text-decoration-none text-black d-flex" href="#">
+                <span class="material-icons">video_library</span><span class="ms-4 fw-bold">Course</span>
+              </a>
+            </li>
+            <li class="pt-3 pb-3 ps-8">
+              <a class="text-decoration-none text-black d-flex" href="./admin.html">
+                <span class="material-icons">people</span><span class="ms-4 fw-bold">Admin</span>
+              </a>
+            </li>
+            <li class="pt-3 pb-3 ps-8">
+              <a class="text-decoration-none text-black d-flex" href="#">
+                <span class="material-icons">settings</span><span class="ms-4 fw-bold">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-9 g-0 position-relative d-flex flex-wrap align-content-start align-items-start">
+          <style>
 .menu li:nth-child(3), .menu li:hover {
   border-left: 4px solid#198754 !important;
   padding-left: 28px !important;
@@ -160,3 +209,19 @@ $('#cancel-btn').click(function() {
   control_btn.removeClass('d-none');
 });
 </script>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-link d-flex position-fixed start-0 bottom-0 ms-8 mb-8 px-0 py-0 border-0 text-decoration-none">
+      <img src="./assets/images/andychen.jpeg" alt="andychen" class="rounded-circle d-block mt-auto mb-auto me-4 headshot">
+      <div>
+        <p class="fw-bold fs-6 mb-0 text-start text-black">Andy Chen</p>
+        <p class="fs-6-5 mb-0 text-start text-black">andy0401@mail.com</p>
+      </div>
+    </button>
+
+    <script src="./assets/js/ckeditor.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
