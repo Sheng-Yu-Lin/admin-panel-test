@@ -1,0 +1,162 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<style>
+.menu li:nth-child(3), .menu li:hover {
+  border-left: 4px solid#198754 !important;
+  padding-left: 28px !important;
+  color: #198754 !important;
+}
+</style>
+<div class="d-flex align-items-end w-100 pt-8 pb-8 ps-8 pe-8 mb-3">
+  <h4 class="h4 fw-bold me-12 mb-0">Assignment</h4>
+  <button id="all-courses-btn" data-bs-toggle="collapse" data-bs-target="#courses-list,#assignment-content" aria-expanded="false" aria-controls="courses-list assignment-content" class="btn btn-link px-0 py-0 border-0 text-decoration-none d-flex align-items-end"><span class="fw-bold text-black">All Courses</span><span class="material-icons text-success ms-2">expand_more</span></button>
+  <button class="btn btn-link px-0 py-0 border-0 text-decoration-none d-flex align-items-end ms-auto"><span class="material-icons d-block text-black">search</span></button>
+  <button class="btn btn-link px-0 py-0 border-0 text-decoration-none d-flex align-items-end ms-6"><span class="material-icons d-block text-black">notifications_active</span></button>
+</div>
+<div class="ms-8 collapse show assignment-list show" id="courses-list">
+  <p>
+    <button id="all-btn" data-bs-toggle="collapse" data-bs-target="#assignment-list,#assignment-content" aria-expanded="true" aria-controls="assignment-list assignment-content" class="btn btn-link px-0 py-0 mb-1 border-0 text-decoration-none d-flex align-items-end"><span class="fw-bold text-black">All (4)</span><span class="material-icons text-success ms-2">expand_more</span></button>
+  </p>
+  <ul class="list-group w-100 collapse show" id="assignment-list">
+    <li class="list-group-item list-group-item-action ps-3 pt-3 pe-3 pb-3 bg-gray-100">
+      <div class="d-flex mb-1 w-100">
+        <p class="fs-7 mb-0">Chapter Assignment 2</p>
+        <p class="fs-7 ms-auto mb-0">4 hrs ago</p>
+      </div>
+      <div class="d-flex w-100">
+        <p class="fs-6 fw-bold mb-0">Please check this file…</p>
+        <p class="fs-7 ms-auto mt-auto mb-0">Emily Wang</p>
+      </div>
+    </li>
+    <li class="list-group-item list-group-item-action ps-3 pt-3 pe-3 pb-3">
+      <div class="d-flex mb-1 w-100">
+        <p class="fs-7 mb-0">Chapter Assignment 1</p>
+        <p class="fs-7 ms-auto mb-0">12 hrs ago</p>
+      </div>
+      <div class="d-flex w-100">
+        <p class="fs-6 fw-bold mb-0">My Homework</p>
+        <p class="fs-7 ms-auto mt-auto mb-0">David Xu</p>
+      </div>
+    </li>
+    <li class="list-group-item list-group-item-action ps-3 pt-3 pe-3 pb-3">
+      <div class="d-flex mb-1 w-100">
+        <p class="fs-7 mb-0">Final Assignment</p>
+        <p class="fs-7 ms-auto mb-0">18 hrs ago</p>
+      </div>
+      <div class="d-flex w-100">
+        <p class="fs-6 fw-bold mb-0">Have a problem with this…</p>
+        <p class="fs-7 ms-auto mt-auto mb-0">Tony Wei</p>
+      </div>
+    </li>
+    <li class="list-group-item list-group-item-action ps-3 pt-3 pe-3 pb-3">
+      <div class="d-flex mb-1 w-100">
+        <p class="fs-7 mb-0">Final Assignment</p>
+        <p class="fs-7 ms-auto mb-0">19 hrs ago</p>
+      </div>
+      <div class="d-flex w-100">
+        <p class="fs-6 fw-bold mb-0">Did I do it right?</p>
+        <p class="fs-7 ms-auto mt-auto mb-0">Christina Lin</p>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="ms-4 position-relative collapse show assignment-content" id="assignment-content">
+  <p class="fs-7 mb-2 position-absolute end-0 text-gray-600">2 comments</p>
+  <ul class="list-group w-100">
+    <li class="list-group-item list-group-item-action bg-gray-100 ps-4 pt-3 pe-4 pb-3">
+      <div class="w-100 position-relative">
+        <p class="fs-7 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+        <p class="mb-0">Please check this file for me, thanks!</p>
+        <button class="btn btn-link px-0 py-0 border-0 text-decoration-none position-absolute end-0 bottom-25"><span class="material-icons d-block text-black">more_vert</span></button>
+      </div>
+    </li>
+    <li class="list-group-item ps-4 pt-4 pe-8 pb-5">
+      <ul class="ps-0 ms-12 assignment-content-ul">
+        <li class="border-bottom border-gray-400">
+          <div class="d-flex ms-n12 mb-4">
+            <button class="btn btn-link px-0 py-0 border-0">
+              <img src="./assets/images/emilywang.jpeg" alt="emilywang" class="rounded-circle headshot">
+            </button>
+            <div class="ms-2">
+              <p class="fs-6 mb-1">Emily Wang</p>
+              <p class="fs-7 mb-0 text-gray-600">10:38 AM (4 hours ago)</p>
+            </div>
+          </div>
+          <p class="mb-4 fs-6-5">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="ps-1 pe-1 bg-gray-100 text-success d-inline-block">div</span> is bigger than the height of the <span class="ps-1 pe-1 bg-gray-100 text-success d-inline-block">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?</p>
+          <button class="btn btn-link d-flex mb-4 pt-1-5 pb-1-5 bg-gray-100 border-gray-400 text-black text-decoration-none">
+            <span class="material-icons d-block me-2">attach_file</span><p class="fs-6 fw-bold mb-0">HW-2-David.zip</p>
+          </button>
+        </li>
+        <li class="mt-4">
+          <div class="d-flex ms-n12 mb-4">
+            <button class="btn btn-link px-0 py-0 border-0">
+              <img src="./assets/images/andychen.jpeg" alt="andychen" class="rounded-circle headshot">
+            </button>
+            <div class="ms-2">
+              <p class="fs-6 mb-1">Andy Chen (You)</p>
+              <p class="fs-7 mb-0 text-gray-600">13:24 AM (1 hours ago)</p>
+            </div>
+          </div>
+          <p class="mb-0 fs-6-5">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>You can:<br><br></p>
+          <ul>
+            <li>adjust the <span class="ps-1 pe-1 bg-gray-100 text-success d-inline-block">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="ps-1 pe-1 bg-gray-100 text-success d-inline-block">middle</span> ) or</li>
+            <li>change the <span class="ps-1 pe-1 bg-gray-100 text-success d-inline-block">display</span> so it isn’t inline.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div id="control-btn">
+    <button class="btn btn-link position-absolute start-0 mt-5-5 px-0 py-0 border-0 text-decoration-none text-black"><span class="material-icons d-block">chevron_left</span></button>
+    <button class="btn btn-link position-absolute start-0 mt-5-5 ms-11-7 px-0 py-0 border-0 text-decoration-none text-black"><span class="material-icons d-block">chevron_right</span></button>
+    <button class="btn btn-outline-success position-absolute end-0 mt-4 me-30-2 ps-8 pe-8 pt-2 pb-2">Mark as read</button>
+    <button class="btn btn-success position-absolute end-0 mt-4 ps-8 pe-8 pt-2 pb-2" id="reply-editor-show-btn">Reply</button>
+  </div>
+  <div id="editor"></div>
+  <button class="btn btn-outline-success d-none position-absolute end-0 me-36-2 ps-8 pe-8 pt-2 pb-2" id="cancel-btn">Cancel</button>
+  <button class="btn btn-success d-none position-absolute end-0 me-6 ps-8 pe-8 pt-2 pb-2" id="reply-btn">Reply</button>
+</div>
+<script>
+let all_courses_expand_icon = $('#all-courses-btn .material-icons');
+let assignment_content = $('#assignment-content');
+$('#all-courses-btn').click(function() {
+  if( !all_courses_expand_icon.hasClass('rotate-180-deg') ) {
+    all_courses_expand_icon.addClass('rotate-180-deg');
+    assignment_content.addClass('d-none');
+  } else {
+    all_courses_expand_icon.removeClass('rotate-180-deg');
+    assignment_content.removeClass('d-none');
+  }
+});
+
+let all_expand_icon = $('#all-btn .material-icons');
+$('#all-btn').click(function() {
+  if( !all_expand_icon.hasClass('rotate-180-deg') ) {
+    all_expand_icon.addClass('rotate-180-deg');
+  } else {
+    all_expand_icon.removeClass('rotate-180-deg');
+  }
+});
+
+let cancel_btn = $('#cancel-btn');
+let reply_btn = $('#reply-btn');
+let control_btn = $('#control-btn');
+$('#reply-editor-show-btn').click(function() {
+  $('#editor + div').addClass('d-block');
+  cancel_btn.removeClass('d-none');
+  reply_btn.removeClass('d-none');
+  $(this).trigger('blur');
+  control_btn.addClass('d-none');
+});
+$('#cancel-btn').click(function() {
+  $('#editor + div').removeClass('d-block');
+  cancel_btn.addClass('d-none');
+  reply_btn.addClass('d-none');
+  $(this).trigger('blur');
+  control_btn.removeClass('d-none');
+});
+</script>
